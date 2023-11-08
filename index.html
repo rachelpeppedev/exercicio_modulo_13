@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Moda Feminina</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: pink;
+            z-index: 2;
+        }
+
+        @media  screen and (max-width: 767px) {
+            .carousel-inner {
+                max-width: 100%;
+            }
+            .carousel-item img {
+                max-width: 100%;
+            }
+
+            .container > row {
+                max-width: 90%;
+            }            
+
+            .card img {
+                max-width: 100%;
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1023px) {
+            .carousel-inner {
+                max-width: 100%;
+            }
+            .carousel-item img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="cabecalho">
+            <div class="navbar navbar-expand-lg p-2">
+                <h1 class="text-secondary">
+                    <p class="font-weight-bold m-0">Bootstrap Fashion</p>
+                </h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#bolsas">Bolsas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sapatos">Sapatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acessórios">Acessórios</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img src="./imagens/bolsa_amarela.png" alt="Bolsa amarela">
+                    <div class="carousel-caption">
+                        <h2>COLEÇÃO PRIMAVERA-VERÃO</h2>
+                    </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./imagens/sapato_laranja.png" alt="Bolsa amarela">
+                    <div class="carousel-caption">
+                        <h2>COLEÇÃO PRIMAVERA-VERÃO</h2>
+                    </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img src="./imagens/oculos_branco.png" alt="Bolsa amarela">
+                    <div class="carousel-caption">
+                        <h2 class="text-secondary">COLEÇÃO PRIMAVERA-VERÃO</h2>
+                    </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+                <div class="container" id="bolsas">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/bolsa_1vermelha.png" alt="bolsa vermelha">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Bolsa Vermelha</h4>
+                                    <p class="card-text text-secondary">
+                                        Bolsa em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/bolsa_2verde.png" alt="bolsa verde">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Bolsa Verde</h4>
+                                    <p class="card-text text-secondary">
+                                        Bolsa em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/bolsa_3rosa.png" alt="bolsa rosa">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Bolsa Rosa</h4>
+                                    <p class="card-text text-secondary">
+                                        Bolsa em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="sapatos">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/sapato_1azul.png" alt="sapato azul">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Sapato Azul</h4>
+                                    <p class="card-text text-secondary">
+                                        Sapato em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/sapato_2verde.png" alt="sapato verde">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Sapato Verde</h4>
+                                    <p class="card-text text-secondary">
+                                        Sapato em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/sapato_3pink.png" alt="sapato pink">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Sapato Pink</h4>
+                                    <p class="card-text text-secondary">
+                                        Sapato em couro
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="acessórios">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/oculos_1redondo.png" alt="óculos preto">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Óculos Preto</h4>
+                                    <p class="card-text text-secondary">
+                                        Óculos de sol
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/oculos_2rosa.png" alt="óculos rosa">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Óculos Rosa</h4>
+                                    <p class="card-text text-secondary">
+                                        Óculos de sol
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                            <div class="card">                        
+                                <img src="./imagens/oculos_3amarelo.png" alt="óculos amarelo">
+                                <div class="card-body">
+                                    <h4 class="card-title text-secondary">Óculos Amarelo</h4>
+                                    <p class="card-text text-secondary">
+                                        Óculos de sol
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>         
+    </div>
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
